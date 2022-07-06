@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #262525;
+}
+
+.navbar {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.navbar img {
+    width: 40px;
+    height: 30px;
+}
+
+.bg {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+}
+
+.bg img {
+    width: 400xp;
+    height: 400px;
+}
+
+.content {
+    display: flex;
+}
+
+.details {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: center;
+}
+
+.details h1 {
+    font-size: 70px;
+}
+
+.details h4 {
+    font-size: 20px;
+}
+
+.contact_btn button {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    padding: 20px;
+    border-radius: 50px;
+    color: #262525;
+    border: none;
+    transition: .2s;
+}
+
+.list {
+    display: none;
+}
+
+.list.open {
+    width: 100%;
+    height: 100%;
+    background: #262525;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    transition: 1s;
+
+}
+
+.menu.open {
+    background: url('menu.png');
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+
+.list ul li {
+    padding: 30px 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.about_contant h1, .services_contant h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.about_contant p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.services_contant {
+    display: flex;
+    margin: 50px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.services_contant p {
+    width: 500px;
+
+}
+.services_contant h2{
+    position: absolute;
+    top: -80%;
+    left: 42%;
+    font-size: 60px;
+}
+
+.link{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.mail{
+    background-image: url(icons/mail.svg);
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+    margin: 0 10px ;
+}
+.contact_links{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.contact_links img{
+    width: 40px;
+    height: 40px;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 10px;
+    
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .details h1 {
+        font-size: 30px;
+    }
+
+    .details h4 {
+        font-size: 15px;
+    }
+
+    .details {
+        top: 70%;
+        left: 20%;
+    }
+
+    .bg {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+    }
+
+    .bg img {
+        width: 250xp;
+        height: 250px;
+    }
+
+    .contact_btn button {
+        top: 85%;
+        left: 40%;
+    }
+
+
+    .services_contant {
+        flex-direction: column;
+    }
+    .col h1{
+        font-size: 20px;
+    }
+    .services_contant p{
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .contact_links img{
+        width: 20px;
+        height: 20px;
+        background: white;
+        padding: 5px;
+        border-radius: 50px;
+        margin: 10px;
+        
+    }
+    .services_contant h2{
+       position: relative;
+       font-size: 20px;
+       left: 5%;
+    }
+
+   
+}
+
+;
+
+
+
+
+/* filter: invert(1); */
